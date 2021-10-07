@@ -3,16 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProvaServiceService } from './prova-service.service';
+import { MyComponentComponent } from './my-component/my-component.component';
+import { FormComponetComponent } from './form-componet/form-componet.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyComponentComponent,
+    FormComponetComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
-  providers: [],
+  providers: [
+    ProvaServiceService,
+    FormComponetComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
